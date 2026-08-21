@@ -7,6 +7,8 @@ exports `type Handle<Req>`. For every request, tsserver encodes the request as a
 resolves `Handle<Req>` with the embedded [typescript-go](https://github.com/microsoft/typescript-go)
 compiler, and sends the resolved type as the HTTP response.
 
+This is the server behind [tsc.rip](https://tsc.rip).
+
 ## Usage
 
 ```console
