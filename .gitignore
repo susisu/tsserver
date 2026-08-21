@@ -1,0 +1,15 @@
+# Binaries
+/tsserver
+*.test
+
+# Coverage
+*.out
+coverage.*
+
+# Go workspace file
+go.work
+go.work.sum
+
+# Editor/IDE
+.idea/
+.vscode/
