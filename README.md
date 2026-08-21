@@ -10,9 +10,10 @@ compiler, and sends the resolved type as the HTTP response.
 ## Usage
 
 ```console
-$ go run . ./example          # serve the app in ./example on :8080
-$ PORT=3000 go run . ./example
-$ LOG_LEVEL=debug go run . ./example
+$ make build
+$ ./tsserver ./example          # serve the app in ./example on :8080
+$ PORT=3000 ./tsserver ./example
+$ LOG_LEVEL=debug ./tsserver ./example
 ```
 
 Environment variables: `PORT` (default `8080`), `LOG_LEVEL` (default `info`; `debug`, `warn`, `error`).
@@ -57,6 +58,7 @@ must not contain a file named `__eval.ts`.
 ## Development
 
 ```console
+$ make build  # builds the tsserver binary
 $ make test   # runs tests for both Go modules (./ and ./typeeval)
 $ make fmt
 ```

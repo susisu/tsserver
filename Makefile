@@ -1,3 +1,7 @@
+.PHONY: build
+build:
+	go build -trimpath -o tsserver .
+
 # typeeval/ is a separate Go module, so `go test ./...` from the root does not cover it.
 .PHONY: test
 test:
